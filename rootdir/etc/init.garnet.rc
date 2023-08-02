@@ -31,6 +31,10 @@ on boot
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/screen
     chmod 0666 /dev/input/event2
 
+    # Charging
+    chown system system /sys/class/qcom-battery/input_suspend
+    chmod 0660 /sys/class/qcom-battery/input_suspend
+
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
     mkdir /data/vendor/misc/mi_fp 0770 system system
