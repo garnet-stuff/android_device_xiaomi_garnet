@@ -19,6 +19,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/garnet-miuicamera/products/miuic
 # Sign
 -include vendor/lineage-priv/keys/keys.mk
 
+# Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
