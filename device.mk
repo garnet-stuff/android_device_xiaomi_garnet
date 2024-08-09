@@ -169,6 +169,10 @@ PRODUCT_PACKAGES += \
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
+# Dolby
+PRODUCT_PACKAGES += \
+    XiaomiDolby
+
 # CURL
 PRODUCT_PACKAGES += \
     libcurl.vendor:64
