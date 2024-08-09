@@ -15,4 +15,8 @@
 
     <!-- FPS Info Service FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
+
+    <!-- Preferred refresh rate at keyguard, if supported by the display. Overrides
+         keyguardMaxRefreshRate. -->
+    <integer name="config_keyguardRefreshRate">60</integer>
 </resources>
